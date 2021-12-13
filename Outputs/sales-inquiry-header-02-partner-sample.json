@@ -1,0 +1,7 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L57",
+	"function": "sap-api-integrations-sales-inquiry-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": "[{SalesInquiry:10000000 PartnerFunction:SH Customer:17100003 Supplier:} {SalesInquiry:10000000 PartnerFunction:PY Customer:17100003 Supplier:} {SalesInquiry:10000000 PartnerFunction:BP Customer:17100003 Supplier:} {SalesInquiry:10000000 PartnerFunction:SP Customer:17100003 Supplier:}]",
+	"time": "2021-12-13T10:05:49.646585+09:00"
+}
