@@ -24,14 +24,17 @@ sap-api-integrations-sales_inquiry-reads が対応する APIサービス は、�
 ## 本レポジトリ に 含まれる API名
 sap-api-integrations-sales_inquiry-reads には、次の API をコールするためのリソースが含まれています。  
 
-* A_SalesInquiry（販売見積伝票 - ヘッダ）※販売見積伝票の詳細データを取得するために、ToItem、ToPartnerと合わせて利用されます。
-* ToItem（販売見積伝票 - 明細）※販売見積伝票明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
-* ToPartner（販売見積伝票 - 取引先）
-* ToItemPricingElement（販売見積伝票明細 - 価格）
+* A_SalesInquiry（販売見積 - ヘッダ）※販売見積の詳細データを取得するために、ToHeaderPartner、ToItem、と合わせて利用されます。
+* ToItem（販売見積 - 明細）※販売見積明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
+* ToHeaderPartner（販売見積 - ヘッダ取引先）
+* ToItemPricingElement（販売見積 - 明細価格条件）
+* A_SalesInquiryItem（販売見積明細）※販売見積明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
+* ToItemPricingElement（販売見積明細 - 明細価格条件）
 
 ## API への 値入力条件 の 初期値
 sap-api-integrations-sales_inquiry-reads において、API への値入力条件の初期値は、入力ファイルレイアウトの種別毎に、次の通りとなっています。  
 
 ### SDC レイアウト
 
-* inoutSDC.（販売見積伝票）
+* inoutSDC.SalesInquiry.SalesInquiry（販売見積番号）
+* inoutSDC.SalesInquiry.SalesInquiryItem.SalesInquiryItem（販売見積明細）
