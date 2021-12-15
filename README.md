@@ -1,5 +1,5 @@
 # sap-api-integrations-sales-inquiry-reads 
-sap-api-integrations-sales_inquiry-reads は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で販売見積データ を取得するマイクロサービスです。    
+sap-api-integrations-sales_inquiry-reads は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で販売引合データ を取得するマイクロサービスです。    
 sap-api-integrations-sales_inquiry-reads には、サンプルのAPI Json フォーマットが含まれています。   
 sap-api-integrations-sales_inquiry-reads は、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。   
 https://api.sap.com/api/OP_API_SALES_INQUIRY_SRV_0001/overview
@@ -24,17 +24,17 @@ sap-api-integrations-sales_inquiry-reads が対応する APIサービス は、�
 ## 本レポジトリ に 含まれる API名
 sap-api-integrations-sales_inquiry-reads には、次の API をコールするためのリソースが含まれています。  
 
-* A_SalesInquiry（販売見積 - ヘッダ）※販売見積の詳細データを取得するために、ToHeaderPartner、ToItem、と合わせて利用されます。
-* ToItem（販売見積 - 明細）※販売見積明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
-* ToHeaderPartner（販売見積 - ヘッダ取引先）
-* ToItemPricingElement（販売見積 - 明細価格条件）
-* A_SalesInquiryItem（販売見積明細）※販売見積明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
-* ToItemPricingElement（販売見積明細 - 明細価格条件）
+* A_SalesInquiry（販売引合 - ヘッダ）※販売引合の詳細データを取得するために、ToHeaderPartner、ToItem、と合わせて利用されます。
+* ToItem（販売引合 - 明細）※販売引合明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
+* ToHeaderPartner（販売引合 - ヘッダ取引先）
+* ToItemPricingElement（販売引合 - 明細価格条件）
+* A_SalesInquiryItem（販売引合明細）※販売引合明細の詳細データを取得するために、ToItemPricingElementと合わせて利用されます。
+* ToItemPricingElement（販売引合明細 - 明細価格条件）
 
 ## API への 値入力条件 の 初期値
 sap-api-integrations-sales_inquiry-reads において、API への値入力条件の初期値は、入力ファイルレイアウトの種別毎に、次の通りとなっています。  
 
 ### SDC レイアウト
 
-* inoutSDC.SalesInquiry.SalesInquiry（販売見積番号）
-* inoutSDC.SalesInquiry.SalesInquiryItem.SalesInquiryItem（販売見積明細）
+* inoutSDC.SalesInquiry.SalesInquiry（販売引合番号）
+* inoutSDC.SalesInquiry.SalesInquiryItem.SalesInquiryItem（販売引合明細）
