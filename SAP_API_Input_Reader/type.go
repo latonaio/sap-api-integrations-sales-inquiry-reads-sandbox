@@ -145,6 +145,7 @@ type SDC struct {
 		} `json:"SalesInquiryItem"`
 	} `json:"SalesInquiry"`
 	APISchema      string `json:"api_schema"`
+	Accepter     []string `json:"accepter"`
 	SalesInquiryNo string `json:"sales_inquiry"`
 	Deleted        bool   `json:"deleted"`
 }
