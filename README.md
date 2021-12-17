@@ -97,3 +97,18 @@ func (c *SAPAPICaller) AsyncGetSalesInquiry(salesInquiry, salesInquiryItem strin
 	wg.Wait()
 }
 ```
+
+## Output  
+本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+以下の sample.json の例は、SAP 販売引合 の ヘッダ が取得された結果の JSON の例です。  
+以下の項目のうち、"BaseUnit" ～ "WeightUnit" は、/SAP_API_Output_Formatter/type.go 内 の Type Product {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+
+```
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L50",
+	"function": "sap-api-integrations-sales-inquiry-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": "[{SalesInquiry:10000000 SalesInquiryType:IN SalesOrganization:1710 DistributionChannel:10 OrganizationDivision:00 SalesGroup: SalesOffice: SalesDistrict: SoldToParty:17100003 CreationDate:/Date(1488240000000)/ LastChangeDate:/Date(1488240000000)/ PurchaseOrderByCustomer:Test Inquiry CustomerPurchaseOrderType: CustomerPurchaseOrderDate: SalesInquiryDate:/Date(1488240000000)/ TotalNetAmount:0.00 TransactionCurrency:USD SDDocumentReason: PricingDate:/Date(1488240000000)/ HeaderBillingBlockReason: BindingPeriodValidityStartDate: BindingPeriodValidityEndDate: HdrOrderProbabilityInPercent:0 ExpectedOrderNetAmount:0.00 IncotermsClassification:EXW CustomerPaymentTerms:0004 PaymentMethod: OverallSDProcessStatus:C TotalCreditCheckStatus: OverallSDDocumentRejectionSts:C ToHeaderPartner:https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Partner ToItem:https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Item}]",
+	"time": "2021-12-13T10:05:48.857815+09:00"
+}
+```
