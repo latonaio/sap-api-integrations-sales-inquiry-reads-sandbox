@@ -51,7 +51,7 @@ accepter において 下記の例のように、データの種別（＝APIの�
   
 ```
 "api_schema": "sap.s4.beh.salesinquiry.v1.SalesInquiry.Created.v1",
-"accepter": ["Header", "Item"],
+"accepter": ["Header"],
 "sales_inquiry": "10000000",
 "deleted": false
 ```
