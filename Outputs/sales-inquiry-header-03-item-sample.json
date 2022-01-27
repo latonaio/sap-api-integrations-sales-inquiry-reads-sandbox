@@ -1,7 +1,35 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L64",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L73",
 	"function": "sap-api-integrations-sales-inquiry-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
-	"message": "[{SalesInquiry:10000000 SalesInquiryItem:10 SalesInquiryItemCategory:AFN SalesInquiryItemText:Trad.Good 11,PD,Reg.Trading PurchaseOrderByCustomer:Test Inquiry Material:TG11 MaterialByCustomer: RequestedQuantity:5 RequestedQuantityUnit:PC ItemOrderProbabilityInPercent:0 ItemGrossWeight:5.000 ItemNetWeight:4.500 ItemWeightUnit:G ItemVolume:0.000 ItemVolumeUnit: TransactionCurrency:USD NetAmount:87.75 MaterialGroup:L001 Batch: IncotermsClassification:EXW CustomerPaymentTerms:0004 SalesDocumentRjcnReason:70 WBSElement: SDProcessStatus:C ToItemPricingElement:https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiryItem(SalesInquiry='10000000',SalesInquiryItem='10')/to_PricingElement}]",
-	"time": "2021-12-13T10:05:50.366593+09:00"
+	"message": [
+		{
+			"SalesInquiry": "10000000",
+			"SalesInquiryItem": "10",
+			"SalesInquiryItemCategory": "AFN",
+			"SalesInquiryItemText": "Trad.Good 11,PD,Reg.Trading",
+			"PurchaseOrderByCustomer": "Test Inquiry",
+			"Material": "TG11",
+			"MaterialByCustomer": "",
+			"RequestedQuantity": "5",
+			"RequestedQuantityUnit": "PC",
+			"ItemOrderProbabilityInPercent": "0",
+			"ItemGrossWeight": "5.000",
+			"ItemNetWeight": "4.500",
+			"ItemWeightUnit": "G",
+			"ItemVolume": "0.000",
+			"ItemVolumeUnit": "",
+			"TransactionCurrency": "USD",
+			"NetAmount": "87.75",
+			"MaterialGroup": "L001",
+			"Batch": "",
+			"IncotermsClassification": "EXW",
+			"CustomerPaymentTerms": "0004",
+			"SalesDocumentRjcnReason": "70",
+			"WBSElement": "",
+			"SDProcessStatus": "C",
+			"to_PricingElement": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiryItem(SalesInquiry='10000000',SalesInquiryItem='10')/to_PricingElement"
+		}
+	],
+	"time": "2022-01-27T16:23:41.998233+09:00"
 }

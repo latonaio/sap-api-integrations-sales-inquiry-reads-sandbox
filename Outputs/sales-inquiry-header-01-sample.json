@@ -1,7 +1,42 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L50",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-inquiry-reads/SAP_API_Caller/caller.go#L59",
 	"function": "sap-api-integrations-sales-inquiry-reads/SAP_API_Caller.(*SAPAPICaller).Header",
 	"level": "INFO",
-	"message": "[{SalesInquiry:10000000 SalesInquiryType:IN SalesOrganization:1710 DistributionChannel:10 OrganizationDivision:00 SalesGroup: SalesOffice: SalesDistrict: SoldToParty:17100003 CreationDate:/Date(1488240000000)/ LastChangeDate:/Date(1488240000000)/ PurchaseOrderByCustomer:Test Inquiry CustomerPurchaseOrderType: CustomerPurchaseOrderDate: SalesInquiryDate:/Date(1488240000000)/ TotalNetAmount:0.00 TransactionCurrency:USD SDDocumentReason: PricingDate:/Date(1488240000000)/ HeaderBillingBlockReason: BindingPeriodValidityStartDate: BindingPeriodValidityEndDate: HdrOrderProbabilityInPercent:0 ExpectedOrderNetAmount:0.00 IncotermsClassification:EXW CustomerPaymentTerms:0004 PaymentMethod: OverallSDProcessStatus:C TotalCreditCheckStatus: OverallSDDocumentRejectionSts:C ToHeaderPartner:https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Partner ToItem:https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Item}]",
-	"time": "2021-12-13T10:05:48.857815+09:00"
+	"message": [
+		{
+			"SalesInquiry": "10000000",
+			"SalesInquiryType": "IN",
+			"SalesOrganization": "1710",
+			"DistributionChannel": "10",
+			"OrganizationDivision": "00",
+			"SalesGroup": "",
+			"SalesOffice": "",
+			"SalesDistrict": "",
+			"SoldToParty": "17100003",
+			"CreationDate": "/Date(1488240000000)/",
+			"LastChangeDate": "/Date(1488240000000)/",
+			"PurchaseOrderByCustomer": "Test Inquiry",
+			"CustomerPurchaseOrderType": "",
+			"CustomerPurchaseOrderDate": "",
+			"SalesInquiryDate": "/Date(1488240000000)/",
+			"TotalNetAmount": "0.00",
+			"TransactionCurrency": "USD",
+			"SDDocumentReason": "",
+			"PricingDate": "/Date(1488240000000)/",
+			"HeaderBillingBlockReason": "",
+			"BindingPeriodValidityStartDate": "",
+			"BindingPeriodValidityEndDate": "",
+			"HdrOrderProbabilityInPercent": "0",
+			"ExpectedOrderNetAmount": "0.00",
+			"IncotermsClassification": "EXW",
+			"CustomerPaymentTerms": "0004",
+			"PaymentMethod": "",
+			"OverallSDProcessStatus": "C",
+			"TotalCreditCheckStatus": "",
+			"OverallSDDocumentRejectionSts": "C",
+			"to_Partner": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Partner",
+			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Item"
+		}
+	],
+	"time": "2022-01-27T16:23:41.274726+09:00"
 }
