@@ -98,9 +98,9 @@ func (c *SAPAPICaller) AsyncGetSalesInquiry(salesInquiry, salesInquiryItem strin
 }
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP 販売引合 の ヘッダデータ が取得された結果の JSON の例です。  
-以下の項目のうち、"SalesInquiry" ～ "ToHeaderPartner" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
+以下の項目のうち、"SalesInquiry" ～ "ToHeaderPartner" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library-for-sap による 定型フォーマットの出力結果です。  
 
 ```
 {
@@ -118,16 +118,16 @@ func (c *SAPAPICaller) AsyncGetSalesInquiry(salesInquiry, salesInquiryItem strin
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "17100003",
-			"CreationDate": "/Date(1488240000000)/",
-			"LastChangeDate": "/Date(1488240000000)/",
+			"CreationDate": "2017-02-28T09:00:00+09:00",
+			"LastChangeDate": "2017-02-28T09:00:00+09:00",
 			"PurchaseOrderByCustomer": "Test Inquiry",
 			"CustomerPurchaseOrderType": "",
 			"CustomerPurchaseOrderDate": "",
-			"SalesInquiryDate": "/Date(1488240000000)/",
+			"SalesInquiryDate": "2017-02-28T09:00:00+09:00",
 			"TotalNetAmount": "0.00",
 			"TransactionCurrency": "USD",
 			"SDDocumentReason": "",
-			"PricingDate": "/Date(1488240000000)/",
+			"PricingDate": "2017-02-28T09:00:00+09:00",
 			"HeaderBillingBlockReason": "",
 			"BindingPeriodValidityStartDate": "",
 			"BindingPeriodValidityEndDate": "",
@@ -143,6 +143,7 @@ func (c *SAPAPICaller) AsyncGetSalesInquiry(salesInquiry, salesInquiryItem strin
 			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_INQUIRY_SRV/A_SalesInquiry('10000000')/to_Item"
 		}
 	],
-	"time": "2022-01-27T16:23:41.274726+09:00"
+	"time": "2022-01-27T22:15:35+09:00"
 }
+
 ```
