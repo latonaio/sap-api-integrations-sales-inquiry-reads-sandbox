@@ -145,5 +145,4 @@ func (c *SAPAPICaller) AsyncGetSalesInquiry(salesInquiry, salesInquiryItem strin
 	],
 	"time": "2022-01-27T22:15:35+09:00"
 }
-
 ```
